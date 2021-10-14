@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oleo Script', cursive;
+    
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 25px;
+}
+
+footer{
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+main{
+    margin: 30px;
+}
+
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+    
+
+}
+
+div{
+    width: 23%;
+    margin: 10px;
+    
+
+
+    
+}
+
+div img{
+    width: 100%;
+    box-shadow: 1px 1px 14px grey;
+    border-radius: 5%;
+   
+
+
+
+}
+
+img:hover{
+    position:relative;
+    bottom: 3px;
+    right: 3px;
+    /*filter: blur(0px);*/
+    filter: opacity(70%);
+    transition: 500ms;
+}
+
+/*MEDIA QUERIES*/
+
+
+
+/*@media tipo de medio (dispositivo) and (condición) 
+    |agrego todos los estilos| 
+
+    div{
+    width: 80%;
+
+}
+*/
+
+
+
+/*TIPOS DE MEDIOS:
+1.- print
+2.- Screen
+3.- Speech
+4.- All
+*/
+
+
+
+/* MEDIA QUERIES PARA DISPOSTIVOS PEQUEÑOS*/
+@media all and (min-width: 280px) and (max-width:767px){
+    div{
+        width: 80%;
+    }
+
+    .titulo{
+        color: black;
+    }
+}
+
+    /*DISPOSITIVOS EXTRA SMALL*/
+
+    @media screen and (max-width: 279px) {
+
+         .titulo{
+        color:greenyellow;
+    }
+    }
+
+/*DISPOSITIVOS MEDIANOS: TABLETS (los valores en px se los saca de pág web=*/
+
+/*mínimo: sería despúes del celular más grande; y  el máx: el tamaño de los dispositivos grandes*/
+@media all and (min-width: 768px) and (max-width:991px){
+    div{
+        width: 46%;
+    }
+
+}
+
+/*DISPOSITIVOS GRANDES*/
+
+@media all and (min-width: 992px){
+    /*agrego los estilos para dispositivos grandes, 
+    o sea lo mismo que escribimos arriba, al principio*/
+}
